@@ -1,3 +1,0 @@
-name Aly
-Job Programmer
-age 28
