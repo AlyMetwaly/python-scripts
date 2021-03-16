@@ -1,0 +1,2 @@
+Total targeted TC,Passed TC,Failed TC,Not Completed TC,Line Coverage,Functional Coverage,Code Coverage (ASIC only),Toggle Coverage (ASIC only),Branch Coverage (ASIC only),Expression/Condition Coverage (ASIC only),FSM Coverage (ASIC only)
+1937,1653,278,6,96.42,55.0,86.42,92.0,83.65,84.37,62.07

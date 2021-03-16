@@ -1,0 +1,340 @@
+Hi,
+
+This is automated status report for BF-CHEST - JENKINS regression. Simulation directory @ Oulu:
+  /userwork10/socci_lsf/jenkins-slaves/sochw-oulnxc58/workspace/IP/BF-Chest/R003/r003_nightly_regression/bf-chest/verif/CHEST_TB_MHAB/scripts/sim
+
+  Statistics:
+    Max parallel tasks:       20
+    Regression length:        21:42:09 - 23:58:55, duration 02:16:45
+      Compilation:              21:42:09 - 21:42:10, duration 00:00:00
+      VRM:                      21:42:10 - 23:53:42, duration 02:11:31
+      Post processing:          23:53:42 - 23:58:55, duration 00:05:13
+    Regr. dir. disk usage:    136G
+        ./out_sims/             125G
+        ./out_formal/           4.0K
+        ./out_cov/              228M
+        ./REPORT/               233M
+        ./VRMDATA/              9.7G
+    Simulation speed:         Avg. 748 ns/s
+    Memory per simulation:    Avg. 1028 MB, Max. 1639 MB
+
+  CONF_MAKE_COMMON_BASE_HOME: /projects/ddm/tools/modularmake/v1.11.6/modularmake/common
+  Simulator:                  /applics/synopsys/vcsmx/Q_2020_03_SP2_1/bin/vcs
+
+=========================================================================================================
+REPORTS:
+
+  VRM report:
+    /userwork10/socci_lsf/jenkins-slaves/sochw-oulnxc58/workspace/IP/BF-Chest/R003/r003_nightly_regression/bf-chest/verif/CHEST_TB_MHAB/scripts/sim/REPORT/vrm/index.html
+
+  Coverage report:
+    /userwork10/socci_lsf/jenkins-slaves/sochw-oulnxc58/workspace/IP/BF-Chest/R003/r003_nightly_regression/bf-chest/verif/CHEST_TB_MHAB/scripts/sim/REPORT/cov/dashboard.html
+
+=========================================================================================================
+SIMULATIONS (85.34% pass rate):
+
+  Total:                      1937
+    Passed:                     1653
+    Errors:                     284
+      Failed:                     3
+      Fatal:                      275
+      Timeout:                    0
+      Incomplete:                 6
+
+  UVM CASE                                                STATUS       CPU TIME     MEMORY    PERFORMANCE    
+  -------------------------------------------------------------------------------------------------------
+  chest_coma_cmodel_test-FEBF_RAND_EXP_MULTI_JOB_20_r353278648 FAILED       00:02:09     1190 MB   1599 ns/s      
+  chest_coma_cmodel_test-FEBF_RAND_EXP_MULTI_JOB_20_r628641374 FAILED       00:02:08     1190 MB   1679 ns/s      
+  chest_coma_cmodel_test-FEBF_RAND_EXP_MULTI_JOB_20_r966003381 FAILED       00:02:01     1174 MB   1624 ns/s      
+  chest_coma_cmodel_test-IEBF_32TRX_3LAYER_1USR_1PRB_MIN_r161685000 INCOMPLETE   -            -         -              
+  chest_coma_cmodel_test-IEBF_64TRX_3LAYER_1USR_1PRB_MIN_r673019378 INCOMPLETE   -            -         -              
+  chest_coma_cmodel_test-IEBF_64TRX_3LAYER_1USR_1PRB_MIN_r682829854 INCOMPLETE   -            -         -              
+  chest_coma_cmodel_test-IEBF_64TRX_3LAYER_1USR_1PRB_MIN_r764924649 INCOMPLETE   -            -         -              
+  chest_coma_cmodel_test-IEBF_64TRX_3LAYER_1USR_1PRB_MIN_r861975076 INCOMPLETE   -            -         -              
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_1PRB_r590796127 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_272PRB_SRS_r973167615 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_273PRB_r289550783 FATAL        00:00:11     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_4PRB_SRS_r999097550 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r193685006 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r204240318 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r205476499 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r321385215 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r367801430 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r375632628 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r377700524 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r505043428 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r520275471 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r565278842 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r594121364 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r6853150 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r710015200 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r742269234 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r795055803 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r796467822 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r834603447 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r909879015 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r931235921 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_SRS_r94066954 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r133561313 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r150593892 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r192514897 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r251095498 FATAL        00:00:13     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r265321468 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r277990789 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r329350004 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r381342890 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r400849701 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r44666488 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r467674315 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r483295551 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r616879643 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r767694824 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r775555563 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r796730323 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r81151623 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r836642880 FATAL        00:00:09     935 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r845502762 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_2LAYER_1USR_NPRB_r876504190 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_4LAYER_1USR_272PRB_SRS_r489096883 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_4LAYER_1USR_4PRB_SRS_r628503067 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-16TRX_4LAYER_1USR_NPRB_SRS_r980156297 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_1PRB_r335756291 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_272PRB_SRS_r556639356 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_273PRB_r187973280 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_4PRB_SRS_r856476440 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r102522961 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r154879589 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r165853457 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r177666725 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r200650610 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r223366953 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r298375137 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r370559029 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r412492186 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r430758772 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r438378469 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r532456055 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r539995560 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r683483346 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r699783555 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r714955510 FATAL        00:00:13     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r826319149 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r876139407 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r928936500 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_SRS_r934255930 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r10689882 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r211935380 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r221333695 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r254551440 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r271999875 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r28752328 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r313070081 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r314954363 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r336789737 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r353412035 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r379814486 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r394632305 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r457733807 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r596919581 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r630955778 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r69223688 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r730916254 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r742101360 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r977115381 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_2LAYER_1USR_NPRB_r996442723 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_4LAYER_1USR_272PRB_SRS_r263383895 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_4LAYER_1USR_4PRB_SRS_r8371612 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-32TRX_4LAYER_1USR_NPRB_SRS_r552731291 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_1PRB_r959201222 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_272PRB_SRS_r644107013 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_273PRB_r311797672 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_4PRB_SRS_r394026645 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r125425392 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r12717792 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r144605515 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r170445490 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r198929050 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r199341850 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r230360277 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r254158291 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r457688181 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r492458630 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r49540656 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r619120372 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r629864283 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r681022739 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r740821835 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r765374604 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r768351755 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r803832338 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r974897631 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_SRS_r978235161 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r10877876 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r189125029 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r308025674 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r337443903 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r345917827 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r359544620 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r408919853 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r416847744 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r502184664 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r579232067 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r612633749 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r700890169 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r705434582 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r705888762 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r71648777 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r737055822 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r781194834 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r850468821 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r867932646 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_2LAYER_1USR_NPRB_r928896239 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_4LAYER_1USR_272PRB_SRS_r588367480 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_4LAYER_1USR_4PRB_SRS_r358556448 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-4TRX_4LAYER_1USR_NPRB_SRS_r662134130 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_1PRB_r896108322 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_272PRB_SRS_r820261364 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_273PRB_r592405343 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_4PRB_SRS_r717316618 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r105040981 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r116546560 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r121777605 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r150030421 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r161224365 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r167725493 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r175539906 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r22978112 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r253571393 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r312284136 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r487827474 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r558495475 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r58526560 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r795388201 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r830619644 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r881054578 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r92787135 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r93646887 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r941583825 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_SRS_r950352418 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r137516561 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r199297335 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r32475910 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r403344400 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r417370630 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r447080743 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r606449067 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r726762422 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r761305233 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r801580921 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r803671375 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r817496471 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r842169203 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r845483735 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r86627429 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r878206177 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r907736879 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r943149086 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r948903941 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_2LAYER_1USR_NPRB_r967523357 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_4LAYER_1USR_272PRB_SRS_r996960728 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_4LAYER_1USR_4PRB_SRS_r620215086 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-64TRX_4LAYER_1USR_NPRB_SRS_r420726801 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_1PRB_r227615770 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_272PRB_SRS_r657623777 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_273PRB_r872292356 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_4PRB_SRS_r41282562 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r197280237 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r341868851 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r39655969 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r441735391 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r488547123 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r545154974 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r556324762 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r568415947 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r603893314 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r617648075 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r627171423 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r713304530 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r719395253 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r802255005 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r823866403 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r889106862 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r898754008 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r916927872 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r940626542 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_SRS_r979864116 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r129573606 FATAL        00:00:13     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r136557171 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r150089542 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r225328003 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r23573074 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r278373882 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r295029199 FATAL        00:00:13     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r304734394 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r318134193 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r53313272 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r562081117 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r57311960 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r588725923 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r648775185 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r679241606 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r745847201 FATAL        00:00:13     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r765305793 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r775359736 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r860384677 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_2LAYER_1USR_NPRB_r929305564 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_4LAYER_1USR_272PRB_SRS_r494994652 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_4LAYER_1USR_4PRB_SRS_r874325656 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-8TRX_4LAYER_1USR_NPRB_SRS_r230676505 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r177548503 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r19312834 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r339902470 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r414430189 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r434334288 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r463354961 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r484898511 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r485291866 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r597315099 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r598302536 FATAL        00:00:13     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r634887235 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r677320665 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r71522375 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r718381888 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r768391404 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r812495944 FATAL        00:00:08     935 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r823637773 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r868925974 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r911759473 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_SRS_r957351899 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r124047648 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r170419720 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r251649115 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r27018000 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r272377779 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r298665980 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r346946768 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r438036168 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r565145563 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r5696213 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r655679934 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r667737741 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r704704358 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r717885921 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r732345092 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r744887677 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r783706484 FATAL        00:00:09     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r847539565 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r929432740 FATAL        00:00:12     934 MB    0 ns/s         
+  chest_race_coma_2user_2comb_test-RANDTRX_2LAYER_1USR_NPRB_r987065246 FATAL        00:00:08     934 MB    0 ns/s         
+  chest_race_only_job_5G_NR_n_user_2comb_2layer_test-8TRX_2LAYER_1USR_272PRB_SRS_r669247795 INCOMPLETE   -            -         -              
+
+=========================================================================================================
+COVERAGE:
+
+  Total Coverage Summary      86.42
+  ---------------------------------
+    Line:                     96.42
+    Branch:                   83.65
+    Conditional:              84.37
+    Toggle:                   92.00
+    FSM:                      62.07

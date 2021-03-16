@@ -4,11 +4,14 @@ print(type(10))
 print(type('a'))
 print(type("Hi there"))
 
+
 class Car:
     pass
 
+
 class Truck():
     pass
+
 
 c = Car()
 convert = Car()

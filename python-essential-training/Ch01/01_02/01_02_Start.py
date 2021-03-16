@@ -9,14 +9,26 @@
 
 
 # < --> is less than
+print(10 < 75)
 
+if 10 < 75:
+    print("The bigger number")
 # == --> is equal to
+kitten = 10
+tiger = 75
+
+if kitten < tiger:
+    print("The kitten weighs less than the tiger")
 
 # < --> is less than
-
+mouse = 1
+if mouse < kitten and mouse < tiger:
+    print("The moust weights the least")
 # False --> 0
 # True --> 1
 # > --> is greater than
+print(False > True)
+print("Jennyfer" > "Jenny")
 
 # Looking for first mismatched letter
 # A - Z --> 1 - 26

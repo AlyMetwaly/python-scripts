@@ -1,0 +1,170 @@
+This is automated status report of *FAILED* 'full' regression.
+
+  Phase Info:
+  --------------------------------------------------------------------------------------
+  Phase   Duration      Passed  Completed      Total   Passed %   Completed %    Status
+  --------------------------------------------------------------------------------------
+  'comp'  00:01:27           2          2          2     100.00        100.00    PASSED
+  'tests' 00:13:37          63         86         86      73.26        100.00    *FAILED
+  'post'  00:00:31           1          1          1     100.00        100.00    PASSED
+  --------------------------------------------------------------------------------------
+
+  General Info:
+  ----------------------------------------------------------------------------------------
+  Launched     /userwork15/anrantal/thor/anrantal_bf_mul_r002_419/verif/bf_mul/scripts/sim
+  Command      mrm regr --target=full
+  Started      2021-03-10 15:07:47
+  Ended        2021-03-10 15:23:38
+  Duration     00:15:51
+  
+  Project      bf_mul002
+  Target       full
+  Seed         326269
+  Contexts     *
+  Tools        vcs
+  Flags        
+  Max Cmds     50
+  Cmd Memory   8000 GB (default)
+  Cmd Timeout  24 h (default)
+  
+  Exec Log     regression/mrm.log
+  Report TXT   regression/report.txt
+  Report HTML  regression/report.html
+  Report JUNIT  regression/junit_report.xml
+  
+  Phase Commands
+    'comp'    2  cmds  ->  regression/1_comp.sh
+    'tests'   86 cmds  ->  regression/2_tests.sh
+    'post'    1  cmds  ->  regression/3_post.sh
+  ----------------------------------------------------------------------------------------
+
+  Command Info:
+  -----------------------------------------------------------------------------------------
+  Phase     Context   Tool   Id                        Seed     Status    Duration   Memory
+  -----------------------------------------------------------------------------------------
+  'comp'    -         -      example_command           740049   PASSED    00:00:00   -     
+  'comp'    default   vcs    compilation               375044   PASSED    00:01:01   -     
+  'tests'   default   vcs    tc_reg_verification       743189   *FAILED   00:01:07   -     
+  'tests'   default   vcs    tc_bypass                 609903   PASSED    00:01:15   -     
+  'tests'   default   vcs    tc_mem_sanity             175012   PASSED    00:00:56   -     
+  'tests'   default   vcs    tc_mem_weight_vectors     9995     PASSED    00:03:14   -     
+  'tests'   default   vcs    tc_pid                    75364    PASSED    00:01:04   -     
+  'tests'   default   vcs    tc_beamforming            739358   PASSED    00:05:24   -     
+  'tests'   default   vcs    tc_mem_precoding          230109   PASSED    00:01:05   -     
+  'tests'   default   vcs    tc_bf_job                 77089    PASSED    00:02:51   -     
+  'tests'   default   vcs    tc_job_form_counter       815720   *FAILED   00:01:12   -     
+  'tests'   default   vcs    tc_pid_priority           612609   PASSED    00:00:55   -     
+  'tests'   default   vcs    tc_pid_priority           411194   PASSED    00:00:55   -     
+  'tests'   default   vcs    tc_pid_priority           14828    PASSED    00:01:00   -     
+  'tests'   default   vcs    tc_pid_priority           768328   PASSED    00:01:14   -     
+  'tests'   default   vcs    tc_pid_priority           53617    PASSED    00:01:05   -     
+  'tests'   default   vcs    tc_pid_priority           603069   PASSED    00:01:13   -     
+  'tests'   default   vcs    tc_reg_reset              980711   *FAILED   00:00:53   -     
+  'tests'   default   vcs    tc_bf_job_random_data     69326    PASSED    00:01:05   -     
+  'tests'   default   vcs    tc_beamforming_reuse      914463   PASSED    00:02:53   -     
+  'tests'   default   vcs    tc_scaling                317950   PASSED    00:01:22   -     
+  'tests'   default   vcs    tc_pid_remask             886438   PASSED    00:13:07   -     
+  'tests'   default   vcs    tc_slot                   723439   PASSED    00:07:19   -     
+  'tests'   default   vcs    tc_pid_smask              33747    PASSED    00:05:54   -     
+  'tests'   default   vcs    tc_pid_smask_alt          604942   *FAILED   00:02:51   -     
+  'tests'   default   vcs    tc_beamforming_16x16      203207   PASSED    00:03:20   -     
+  'tests'   default   vcs    tc_beamforming_16x32      201159   PASSED    00:04:08   -     
+  'tests'   default   vcs    tc_nr                     590654   *FAILED   00:06:32   -     
+  'tests'   default   vcs    tc_nr                     130586   *FAILED   00:06:29   -     
+  'tests'   default   vcs    tc_nr                     128403   *FAILED   00:05:32   -     
+  'tests'   default   vcs    tc_nr                     242583   *FAILED   00:05:40   -     
+  'tests'   default   vcs    tc_nr                     421274   PASSED    00:04:31   -     
+  'tests'   default   vcs    tc_nr                     89561    *FAILED   00:04:32   -     
+  'tests'   default   vcs    tc_nr                     274909   PASSED    00:04:25   -     
+  'tests'   default   vcs    tc_nr                     656643   PASSED    00:03:51   -     
+  'tests'   default   vcs    tc_nr                     308259   *FAILED   00:03:14   -     
+  'tests'   default   vcs    tc_nr                     574672   *FAILED   00:03:14   -     
+  'tests'   default   vcs    tc_nr                     268147   PASSED    00:03:33   -     
+  'tests'   default   vcs    tc_nr                     891087   PASSED    00:05:38   -     
+  'tests'   default   vcs    tc_nr                     388199   PASSED    00:04:42   -     
+  'tests'   default   vcs    tc_nr                     220040   PASSED    00:04:20   -     
+  'tests'   default   vcs    tc_nr                     430027   *FAILED   00:03:41   -     
+  'tests'   default   vcs    tc_nr                     265745   PASSED    00:04:03   -     
+  'tests'   default   vcs    tc_pid_flush              88081    PASSED    00:02:44   -     
+  'tests'   default   vcs    tc_pid_rb                 640396   PASSED    00:01:27   -     
+  'tests'   default   vcs    tc_sxc                    310917   PASSED    00:03:10   -     
+  'tests'   default   vcs    tc_sxc                    106227   PASSED    00:02:48   -     
+  'tests'   default   vcs    tc_sxc                    551187   PASSED    00:02:44   -     
+  'tests'   default   vcs    tc_sxc                    614059   PASSED    00:02:56   -     
+  'tests'   default   vcs    tc_sxc                    541409   PASSED    00:03:21   -     
+  'tests'   default   vcs    tc_sxc                    9372     PASSED    00:02:53   -     
+  'tests'   default   vcs    tc_sxc                    915874   PASSED    00:03:10   -     
+  'tests'   default   vcs    tc_sxc                    665172   PASSED    00:02:55   -     
+  'tests'   default   vcs    tc_sxc                    37063    PASSED    00:03:08   -     
+  'tests'   default   vcs    tc_sxc                    403714   PASSED    00:02:58   -     
+  'tests'   default   vcs    tc_sxc                    203654   PASSED    00:03:10   -     
+  'tests'   default   vcs    tc_sxc                    406336   PASSED    00:02:38   -     
+  'tests'   default   vcs    tc_sxc                    39698    PASSED    00:02:45   -     
+  'tests'   default   vcs    tc_sxc                    566953   PASSED    00:02:58   -     
+  'tests'   default   vcs    tc_sxc                    373269   PASSED    00:02:43   -     
+  'tests'   default   vcs    tc_sxc                    887190   PASSED    00:03:16   -     
+  'tests'   default   vcs    tc_dataformats            856245   PASSED    00:01:19   -     
+  'tests'   default   vcs    tc_dataformats            475323   PASSED    00:01:24   -     
+  'tests'   default   vcs    tc_dataformats            379760   PASSED    00:01:37   -     
+  'tests'   default   vcs    tc_dataformats            233276   PASSED    00:01:20   -     
+  'tests'   default   vcs    tc_re_per_prb             536507   *FAILED   00:01:28   -     
+  'tests'   default   vcs    tc_re_per_prb             185005   *FAILED   00:01:19   -     
+  'tests'   default   vcs    tc_re_per_prb             906616   *FAILED   00:01:21   -     
+  'tests'   default   vcs    tc_pid_overflow           61933    PASSED    00:01:27   -     
+  'tests'   default   vcs    tc_pid_prbs               856168   PASSED    00:07:43   -     
+  'tests'   default   vcs    tc_throughput_bf_16x32    400789   *FAILED   00:01:09   -     
+  'tests'   default   vcs    tc_throughput_bf_16x64    376747   *FAILED   00:02:39   -     
+  'tests'   default   vcs    tc_throughput_bf_8x16     583107   *FAILED   00:01:03   -     
+  'tests'   default   vcs    tc_throughput_wv          467151   PASSED    00:01:02   -     
+  'tests'   default   vcs    tc_pid_bundle             150559   PASSED    00:04:17   -     
+  'tests'   default   vcs    tc_reg_special            435711   *FAILED   00:00:58   -     
+  'tests'   default   vcs    tc_wrapper_if             786364   PASSED    00:05:37   -     
+  'tests'   default   vcs    tc_wrapper_if             101233   PASSED    00:04:03   -     
+  'tests'   default   vcs    tc_wrapper_if_overflow    688495   *FAILED   00:01:29   -     
+  'tests'   default   vcs    tc_wrapper_if_underflow   824556   *FAILED   00:01:25   -     
+  'tests'   default   vcs    tc_pid_bf                 882071   PASSED    00:04:46   -     
+  'tests'   default   vcs    tc_pid_mod_decomp         249616   *FAILED   00:02:08   -     
+  'tests'   default   vcs    tc_slot_reconfiguration   67486    PASSED    00:05:59   -     
+  'tests'   default   vcs    tc_pid_txd                517747   *FAILED   00:03:39   -     
+  'tests'   default   vcs    tc_pid_tag                12749    PASSED    00:04:34   -     
+  'tests'   default   vcs    tc_latency                231165   PASSED    00:03:31   -     
+  'tests'   default   vcs    tc_power_typical          539879   PASSED    00:04:25   -     
+  'tests'   default   vcs    tc_power_max              787455   PASSED    00:03:59   -     
+  'post'    -         -      user_report_icm_cfgs      724736   PASSED    00:00:11   -     
+  -----------------------------------------------------------------------------------------
+
+  User-generated:
+  ----------------------------------------------------------------------------
+   
+   ----------------------------------------
+   anrantal
+   2021_03_10 15:23:19
+   ----------------------------------------
+   Command       : ls                      
+   Site          : local                   
+   Configuration : dev_cfg_verif           
+   Name          : anrantal_bf_mul_r002_419
+   ----------------------------------------
+   
+   ############################################################################
+   Proj/Var/Libtype         Library            LibraryRelease  DevCL    HaveCL 
+   ############################################################################
+   modularmake/r002/verif   modularmake        v1.0.17         4174426  4174426
+   thor_common/r001/verif   mhab_tb_wrapper    v0.0.18         5836776  5836776
+   verif_common/r001/verif  clock_monitor_vip  v0.0.1,v1.5.0   593278   593278 
+   bf_mul/r002/verif        bf_mul             #ActiveDev      ---      5932097
+   bf_mul/r002/ref_model    bf_mul002          #ActiveDev      ---      5933016
+   firefish/r001/impl       scripts_global     #ActiveDev      ---      2273638
+   bf_mul/r002/impl         bf_mul002          #ActiveDev      ---      5933016
+   tsmc/n05/fe              tico001_tcbn05     v0.0.4          5575937  5575937
+   ip_common/r001/fe        tico001_generic    v0.0.28         4321007  4321007
+   samsung/r001/fe          tico001_14lpp      v0.0.1          4457225  4457225
+   thor_common/r001/fe      thor_common        v0.6.0          5464239  5464239
+   tsmc/n05/fe              ram_tcbn05_thor    v1.0.0          5805059  5805059
+   rel_notes/r001/fe        gui                v0.0.12         3974449  3974449
+   bf_mul/r002/fe           bf_mul002          v3.2.0          5849420  5933016
+   axisl/r001/fe            axisl001           v4.9.8          4979597  4979597
+   ############################################################################
+   
+  ----------------------------------------------------------------------------
+
